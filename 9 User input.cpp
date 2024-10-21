@@ -10,7 +10,7 @@ int main() {
     std::string Name;
 
     std::cout <<"What is your full name: ";
-    std::getline(std::cin >>std::ws, Name);
+    std::getline(std::cin >>std::ws, Name);  //>>std::ws used for eliminating the buffer
 
     // Input for age
     std::cout <<"What is your age: ";
