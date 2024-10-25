@@ -1,22 +1,20 @@
 #include <iostream>
 
-// Array in C++
-//Array is data structure that can hold multiple values this value can be accesed by index number
+//Size of determine size in bytes of a variable, data type, class,object, etc
 
 int main() {
-    //First method of declaration of an array
-    std::string Freind[]={"tema","dima","danil","andrey","vitali "};
-    std::cout << Freind[0] << std::endl;
-    std::cout << Freind[1] << std::endl;
+    double gpa=2.5;
+    std::string name="kader";
+    char grade ='f';
+    bool virgin= true;
 
-    //You can change any element in the array;
-    //Second method of declaring an array
-
-    std::string car[2];
-    std::cin >> car[0] >> car[1];
-    std::cout << car[0] << std::endl;
-    std::cout << car[1] << std::endl;
-
+    std::cout << sizeof(gpa) << std::endl;
+    std::cout << sizeof(name) << std::endl;
+    std::cout << sizeof(grade) << std::endl;
+    std::cout <<sizeof(virgin) << std::endl;
+    //HOW TO KNOW HOW MANY ELEMENT IN ARRAY USING SIZE OF
+    char array[]={'A','B','C','D','E','R'};
+    std::cout <<"elemant " << sizeof(array)/sizeof(array[0]) << std::endl;
 
     return 0;
 }
