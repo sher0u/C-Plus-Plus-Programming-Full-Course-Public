@@ -14,7 +14,8 @@ int main() {
     printer();
     std::cout<<Number<<std::endl;
     int Number=5;//local variable
-    std::cout<<Number<<std::endl;
+    std::cout<<::Number<<std::endl;
+    //using two point will make us working with the global variable always
 
     return 0;
 }
